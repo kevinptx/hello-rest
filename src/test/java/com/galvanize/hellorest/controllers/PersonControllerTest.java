@@ -37,9 +37,6 @@ class PersonControllerTest {
                 .andExpect(jsonPath("$.age").value(57));
     }
 
-
-
-
     //Method to create a date in the past for testing
     private Date getTestDob(int years){
         LocalDate ld = LocalDate.now();
